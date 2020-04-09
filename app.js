@@ -10,7 +10,7 @@ const port=process.env.PORT || 3000;
 app.use(express.static("./public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const url="http://api.weatherstack.com/current?access_key="+"4d643754bd86f209879a2790558581df"+"&query="
+const url="http://api.weatherstack.com/current?access_key="+key.key+"&query="
 app.get("/", function(req, res) {
     res.render("index");
 });
