@@ -20,7 +20,7 @@ WeatherForm.addEventListener('submit',function(e){
     MessageFour.innerHTML="";
     MessageFive.setAttribute("src","");
     // fetch("http://localhost:3000/weather?address="+location).then(function(response){
-
+    // My india
     fetch("/weather?address="+location).then(function(response){
         response.json().then(function(data){
            if(data.error){
