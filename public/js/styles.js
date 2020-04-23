@@ -21,6 +21,7 @@ WeatherForm.addEventListener('submit',function(e){
     MessageFive.setAttribute("src","");
     // fetch("http://localhost:3000/weather?address="+location).then(function(response){
     // My india
+    //Tycoon 123
     fetch("/weather?address="+location).then(function(response){
         response.json().then(function(data){
            if(data.error){
@@ -34,8 +35,6 @@ WeatherForm.addEventListener('submit',function(e){
             MessageFour.innerHTML="Weather Description: "+data.weather_descriptions;
             MessageFive.setAttribute("src",data.weather_icons);
 
-
-            
 
            }
         })
