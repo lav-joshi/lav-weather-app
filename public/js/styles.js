@@ -22,6 +22,7 @@ WeatherForm.addEventListener('submit',function(e){
     // fetch("http://localhost:3000/weather?address="+location).then(function(response){
     // My india
     //congo
+    //Sove it
     fetch("/weather?address="+location).then(function(response){
         response.json().then(function(data){
            if(data.error){
