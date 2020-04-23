@@ -23,6 +23,7 @@ WeatherForm.addEventListener('submit',function(e){
     // My india
     //congo
     //Merge conflicts
+    //Merge conflicts 2 
     fetch("/weather?address="+location).then(function(response){
         response.json().then(function(data){
            if(data.error){
