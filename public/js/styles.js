@@ -19,6 +19,7 @@ WeatherForm.addEventListener('submit',function(e){
     MessageThree.innerHTML="";
     MessageFour.innerHTML="";
     MessageFive.setAttribute("src","");
+    // hello world
     // fetch("http://localhost:3000/weather?address="+location).then(function(response){
 
     fetch("/weather?address="+location).then(function(response){
