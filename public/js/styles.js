@@ -21,7 +21,9 @@ WeatherForm.addEventListener('submit',function(e){
     MessageFive.setAttribute("src","");
     // fetch("http://localhost:3000/weather?address="+location).then(function(response){
     // My india
-    //Tycoon 123
+    //congo
+    //Merge conflicts
+    //Merge conflicts 2 
     fetch("/weather?address="+location).then(function(response){
         response.json().then(function(data){
            if(data.error){
